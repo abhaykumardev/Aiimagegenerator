@@ -20,79 +20,78 @@
             id="prompt"
             placeholder="Describe the image you want to generate... (e.g.  A Man waking looking for the Bus.)"
           ></textarea>
-        </div>
-        <div class="control">
-          <div class="control-group">
-            <label for="style">Art Style</label>
-            <select id="style" class="control-input">
-              <option value="realistic">Realistic</option>
-              <option value="artistic">Artistic</option>
-              <option value="cartoon">Cartoon</option>
-              <option value="abstract">Abstract</option>
-              <option value="cyberpunk">Cyberpunk</option>
-              <option value="vintage">Vintage</option>
-            </select>
-          </div>
 
-          <div class="control-group">
-            <label for="style">Resolutin</label>
-            <select id="style" class="control-input">
-              <option value="522x522">512 x 512</option>
-              <option value="768x768">768 x 768</option>
-              <option value="1024x1024">1024 x 1024</option>
-              <option value="1536x1024">1536 x 1024</option>
-            </select>
-          </div>
+          <div class="control">
+            <div class="control-group">
+              <label for="style">Art Style</label>
+              <select id="style" class="control-input">
+                <option value="realistic">Realistic</option>
+                <option value="artistic">Artistic</option>
+                <option value="cartoon">Cartoon</option>
+                <option value="abstract">Abstract</option>
+                <option value="cyberpunk">Cyberpunk</option>
+                <option value="vintage">Vintage</option>
+              </select>
+            </div>
 
-          <div class="control-group">
-            <label for="style">Art Style</label>
-            <select id="style" class="control-input">
-              <option value="standard">Standard</option>
-              <option value="high">High</option>
-              <option value="ultra">Ultra</option>
-            </select>
-          </div>
+            <div class="control-group">
+              <label for="style">Resolutin</label>
+              <select id="style" class="control-input">
+                <option value="522x522">512 x 512</option>
+                <option value="768x768">768 x 768</option>
+                <option value="1024x1024">1024 x 1024</option>
+                <option value="1536x1024">1536 x 1024</option>
+              </select>
+            </div>
 
-          <div class="control-group">
-            <label for="count">Number of images</label>
-            <select id="style" class="control-input">
-              <option value="1">1 Image</option>
-              <option value="2">2 Images</option>
-              <option value="3">3 Images</option>
-            </select>
-          </div>
+            <div class="control-group">
+              <label for="style">Art Style</label>
+              <select id="style" class="control-input">
+                <option value="standard">Standard</option>
+                <option value="high">High</option>
+                <option value="ultra">Ultra</option>
+              </select>
+            </div>
 
+            <div class="control-group">
+              <label for="count">Number of images</label>
+              <select id="style" class="control-input">
+                <option value="1">1 Image</option>
+                <option value="2">2 Images</option>
+                <option value="3">3 Images</option>
+              </select>
+            </div>
+          </div>
           <button class="generate-btn" id="generatebtn">
             <span class="loading-spinner"></span>
             <span class="btn-text">Generate Image</span>
           </button>
         </div>
-
-        <div class="results-section">
-          <div class="result-header">
-            <h2>Generated Images</h2>
-          </div>
-          <div class="results">
-            <div class="placeholder">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="placeholder-icon"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-                <path
-                  d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 11V3a1 1 0 0 1 1-1h12z"
-                />
-              </svg>
-              <p style="font-size: 0.8rem; margin-top: 0.5rem">
-                Your generated image will appear here.
-              </p>
-              <p style="font-size: 0.8rem; margin-top: 0.5rem">
-                Enter a prompt and click "Generate Image" to create your AI
-                masterpiece.
-              </p>
-            </div>
+      </div>
+      <div class="results-section">
+        <div class="result-header">
+          <h2>Generated Images</h2>
+        </div>
+        <div class="results">
+          <div class="placeholder">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="placeholder-icon"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+              <path
+                d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 11V3a1 1 0 0 1 1-1h12z"
+              />
+            </svg>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem">
+              Your generated image will appear here.
+            </p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem">
+              Enter a prompt and click "Generate Image" to create your AI
+              masterpiece.
+            </p>
           </div>
         </div>
       </div>
